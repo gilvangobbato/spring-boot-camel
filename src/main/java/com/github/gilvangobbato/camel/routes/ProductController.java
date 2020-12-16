@@ -1,4 +1,4 @@
-package com.github.gilvangobbato.presentation;
+package com.github.gilvangobbato.camel.routes;
 
 import com.github.gilvangobbato.services.DiscountService;
 import com.github.gilvangobbato.services.ProductService;
@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ProductController  extends RouteBuilder {
+    
     @Autowired
     private Environment env;
 

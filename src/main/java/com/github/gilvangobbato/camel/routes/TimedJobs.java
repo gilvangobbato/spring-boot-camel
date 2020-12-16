@@ -8,7 +8,7 @@ public class TimedJobs extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("timer:new-discount?delay=1000&period={{discount.newDiscountPeriod:2000}}")
+        from("timer:new-discount?delay=5000&period={{discount.newDiscountPeriod:2000}}")
                 .routeId("make-discount")
                 .bean("discountService", "makeDiscount")
                 .to("jpa:com.github.gilvangobbato.domain.Discount")
@@ -16,7 +16,7 @@ public class TimedJobs extends RouteBuilder {
 
         from("jpa:com.github.gilvangobbato.domain.Product"
                 + "?namedQuery=discounted-products"
-                + "&delay={{discount.listDiscountPeriod:6000}}"
+                + "&delay={{discount.listDiscountPeriod:10000}}"
                 + "&consumeDelete=false")
                 .routeId("list-discounted-products")
                 .log(
