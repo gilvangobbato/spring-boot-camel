@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-boot-starter-parent
+    description: Serviço Stateless
+  main:
+    banner-mode: "off"
+    allow-bean-definition-overriding: true
+server:
+  port: 8080
+management:
+  server:
+    port: 9090
