@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-boot-starter-parent
+    name: spring-boot-service
     description: Serviço Stateless
   main:
     banner-mode: "off"

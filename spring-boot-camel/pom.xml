@@ -10,7 +10,7 @@
     </parent>
     <artifactId>spring-boot-camel</artifactId>
     <description>Spring Boot Camel integration tutorial</description>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <properties>
         <camel.version>3.4.0</camel.version>
         <run.profiles>dev</run.profiles>
@@ -22,10 +22,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
+
         <!--Camel Spring Boot Dependencies to enable REST, JSON, SWAGGER, JPA features-->
         <dependency>
             <groupId>org.apache.camel.springboot</groupId>
@@ -46,17 +43,6 @@
             <groupId>org.apache.camel.springboot</groupId>
             <artifactId>camel-swagger-java-starter</artifactId>
             <version>${camel.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.springboot</groupId>
-            <artifactId>camel-jpa-starter</artifactId>
-            <version>${camel.version}</version>
-        </dependency>
-        <!--In memory database-->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <!--Spring boot testing-->
         <dependency>

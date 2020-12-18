@@ -1,9 +1,12 @@
-camel:
-  component:
-    servlet:
-      mapping:
-        contextPath: /javadevjournal/*
-
-discount:
-  newDiscountPeriod: 2000
-  listDiscountPeriod: 6000
+spring:
+  application:
+    name: spring-boot-camel
+    description: Serviço Stateless
+  main:
+    banner-mode: "off"
+    allow-bean-definition-overriding: true
+server:
+  port: 8080
+management:
+  server:
+    port: 9090
