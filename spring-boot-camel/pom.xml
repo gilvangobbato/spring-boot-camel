@@ -12,7 +12,7 @@
     <description>Spring Boot Camel integration tutorial</description>
     <version>1.0</version>
     <properties>
-        <camel.version>3.4.0</camel.version>
+        <camel.version>3.7.0</camel.version>
         <run.profiles>dev</run.profiles>
     </properties>
 
@@ -29,21 +29,7 @@
             <artifactId>camel-spring-boot-starter</artifactId>
             <version>${camel.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.camel.springboot</groupId>
-            <artifactId>camel-servlet-starter</artifactId>
-            <version>${camel.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.springboot</groupId>
-            <artifactId>camel-jackson-starter</artifactId>
-            <version>${camel.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.camel.springboot</groupId>
-            <artifactId>camel-swagger-java-starter</artifactId>
-            <version>${camel.version}</version>
-        </dependency>
+
         <!--Spring boot testing-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -57,6 +43,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
