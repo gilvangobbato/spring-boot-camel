@@ -1,10 +1,10 @@
-version: '3'
+version: "3.3"
 
 services:
   api:
     image: spring-boot-service
     build:
-      context: './spring-boot-service'
+      context: "./spring-boot-service"
       dockerfile: Dockerfile
     ports:
       - 8081:8080

@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 
 @Log4j2
 @RestController
-@RequestMapping("/servico")
+@RequestMapping("/clientes")
 public class ApiController {
 
     @GetMapping(produces = MimeTypeUtils.APPLICATION_JSON_VALUE)
@@ -21,4 +21,5 @@ public class ApiController {
         log.error(time);
         return ResponseEntity.ok(time);
     }
+
 }
